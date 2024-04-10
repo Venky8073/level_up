@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function counter() {
+    let count = 0;
+
+    function increment() {
+        count++;
+        return count;
+    }
+
+    function decrement() {
+        count--;
+        return count;
+    }
+
+    function reset() {
+        count = 0;
+    }
+
+    function getCount() {
+        return count;
+    }
+
+    return {
+        increment,
+        decrement,
+        reset,
+        getCount
+    };
+}
+
+// Example usage:
+const { increment, decrement, reset, getCount } = counter();
+
+console.log(increment());  // Output: 1
+console.log(increment());  // Output: 2
+console.log(decrement());  // Output: 1
+console.log(getCount());   // Output: 1
+reset();
+console.log(getCount());   // Output: 0
+
+</script>

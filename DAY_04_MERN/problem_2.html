@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function customMap(arr, func) {
+    const result = [];
+    for (let i = 0; i < arr.length; i++) {
+        result.push(func(arr[i]));
+    }
+    return result;
+}
+
+// Example usage:
+const numbers = [1, 2, 3, 4, 5];
+
+
+// Using custom map
+const doubledCustom = customMap(numbers, (num) => num * 2);
+console.log(doubledCustom);
+
+</script>
