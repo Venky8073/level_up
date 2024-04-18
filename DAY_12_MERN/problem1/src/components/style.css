@@ -1,0 +1,18 @@
+.header{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.light{
+    box-shadow: 5px 5px 5px 5px black;
+    
+}
+
+.dark{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    box-shadow: 5px 5px 5px 5px rgb(65, 64, 64);
+    
+}
